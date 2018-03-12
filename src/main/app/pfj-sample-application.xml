@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
     <flow name="pfj-sample-applicationFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" doc:name="HTTP"/>
-        <logger message="## Hello PFJ!" level="INFO" doc:name="Logger"/>
-        <set-payload value="Hello PFJ!#[System.getProperty('line.separator')]" doc:name="Set Payload"/>
+        <logger message="## Hello PFJ!!!" level="INFO" doc:name="Logger"/>
+        <set-payload value="Hello PFJ!!!#[System.getProperty('line.separator')]" doc:name="Set Payload"/>
     </flow>
 </mule>
